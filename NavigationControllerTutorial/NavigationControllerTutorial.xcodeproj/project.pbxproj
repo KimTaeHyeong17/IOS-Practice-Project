@@ -12,6 +12,8 @@
 		492059E6229BBD7E00C90527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492059E4229BBD7E00C90527 /* Main.storyboard */; };
 		492059E8229BBD7F00C90527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492059E7229BBD7F00C90527 /* Assets.xcassets */; };
 		492059EB229BBD7F00C90527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492059E9229BBD7F00C90527 /* LaunchScreen.storyboard */; };
+		492059F3229BCC8D00C90527 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492059F2229BCC8D00C90527 /* MainNavigationController.swift */; };
+		492059F5229BCF0700C90527 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492059F4229BCF0700C90527 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		492059E7229BBD7F00C90527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492059EA229BBD7F00C90527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492059EC229BBD7F00C90527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492059F2229BCC8D00C90527 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		492059F4229BCF0700C90527 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				492059E7229BBD7F00C90527 /* Assets.xcassets */,
 				492059E9229BBD7F00C90527 /* LaunchScreen.storyboard */,
 				492059EC229BBD7F00C90527 /* Info.plist */,
+				492059F2229BCC8D00C90527 /* MainNavigationController.swift */,
+				492059F4229BCF0700C90527 /* LoginViewController.swift */,
 			);
 			path = NavigationControllerTutorial;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492059F5229BCF0700C90527 /* LoginViewController.swift in Sources */,
+				492059F3229BCC8D00C90527 /* MainNavigationController.swift in Sources */,
 				492059E3229BBD7E00C90527 /* ViewController.swift in Sources */,
 				492059E1229BBD7E00C90527 /* AppDelegate.swift in Sources */,
 			);
