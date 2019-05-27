@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakyPOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ghO-ZE-Rnb">
+                                <rect key="frame" x="0.0" y="441" width="414" height="245.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디(이메일)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-av-Oik">
+                                        <rect key="frame" x="53" y="0.0" width="308" height="52.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5HV-h3-Fxm">
+                                        <rect key="frame" x="53" y="64.5" width="308" height="52"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFT-9i-KTc">
+                                        <rect key="frame" x="53" y="128.5" width="308" height="52.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="로그인">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="T2k-2y-qyh">
+                                        <rect key="frame" x="120.5" y="193" width="173" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nar-ee-zJo">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="52.5"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="비밀번호 찾기">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="15" name=".AppleSDGothicNeoI-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-MM-61q">
+                                                <rect key="frame" x="121" y="0.0" width="52" height="52.5"/>
+                                                <state key="normal" title="회원가입">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EFT-9i-KTc" firstAttribute="leading" secondItem="ghO-ZE-Rnb" secondAttribute="leading" constant="53" id="39h-Rj-7kc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pgm-av-Oik" secondAttribute="trailing" constant="53" id="JUD-D3-KRH"/>
+                                    <constraint firstAttribute="trailing" secondItem="EFT-9i-KTc" secondAttribute="trailing" constant="53" id="P6Q-yy-Rw3"/>
+                                    <constraint firstAttribute="trailing" secondItem="5HV-h3-Fxm" secondAttribute="trailing" constant="53" id="R7I-tG-0X7"/>
+                                    <constraint firstItem="Pgm-av-Oik" firstAttribute="leading" secondItem="ghO-ZE-Rnb" secondAttribute="leading" constant="53" id="Teg-pp-rXD"/>
+                                    <constraint firstItem="5HV-h3-Fxm" firstAttribute="leading" secondItem="ghO-ZE-Rnb" secondAttribute="leading" constant="53" id="Xid-Xi-kf4"/>
+                                </constraints>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejx-tl-0CH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="qXa-tw-mjF"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taki_icon_512_white" translatesAutoresizingMaskIntoConstraints="NO" id="YhP-da-H7v">
+                                <rect key="frame" x="150" y="558" width="115" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1uF-1f-0aO"/>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="397" id="Agm-9h-KgB"/>
+                            <constraint firstItem="Ejx-tl-0CH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Aiq-M4-kox"/>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IFg-UN-sg1"/>
+                            <constraint firstItem="Ejx-tl-0CH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JZK-Hm-t9E"/>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="top" secondItem="YhP-da-H7v" secondAttribute="bottom" constant="-133" id="QXt-3n-39w"/>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RUY-H5-3FH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ghO-ZE-Rnb" secondAttribute="bottom" constant="175.5" id="e6Q-m1-91K"/>
+                            <constraint firstItem="Ejx-tl-0CH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gZk-ls-ZMq"/>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="115.75" id="pxl-Pk-ukg"/>
+                            <constraint firstItem="YhP-da-H7v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="txC-0A-KCL"/>
+                            <constraint firstItem="ghO-ZE-Rnb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="uC9-ir-kaS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YhP-da-H7v" secondAttribute="trailing" constant="149" id="yfO-nr-CHc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="taki_icon_512_white" width="512" height="512"/>
+    </resources>
+</document>
