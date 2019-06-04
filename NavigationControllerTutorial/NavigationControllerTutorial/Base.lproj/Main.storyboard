@@ -127,6 +127,7 @@
                                         </state>
                                         <connections>
                                             <action selector="LoginButton:" destination="YVZ-XA-G4w" eventType="touchUpInside" id="45Y-6k-M3H"/>
+                                            <segue destination="p9n-xd-AsH" kind="show" id="2eN-l2-0lb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -146,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5n-Y9-IPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1255.2" y="136.69950738916256"/>
+            <point key="canvasLocation" x="-705" y="137"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KMO-fe-ID5">

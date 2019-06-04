@@ -1,15 +1,183 @@
 import UIKit
 
-var str = "Hello, playground"
 
-//변수 선언 : var variable_name = asign variable
+//변수 선언 : var variable_name = asign variable (var actually have data type)
 //정수를 문자열로 바꾸기 : int --> String String(int variable)
 //constant 선언 : let str
 //데이터 타입 지정하기 : var str:String
 
+
+//Naming Conventions
+
+
+
+
+//Protocol and Delegate Pattern exercise
+protocol PoliceCodes{
+    
+    func nineOhTwo()
+
+}
+
+class Officer{
+    var radio:PoliceCodes?
+    
+    func callItIn(){
+        radio?.nineOhTwo()
+    }
+    
+}
+
+class Dispatcher: PoliceCodes {
+    func nineOhTwo() {
+        print("902 received and handled")
+    }
+
+}
+var o1 = Officer()
+let d1 = Dispatcher()
+o1.radio = d1
+o1.callItIn()
+
+
+
+//optional
+//Employee name Search Function
+
+var myInt : Int?
+var str:String? = "Hello, playGround"
+
+str = nil
+
+class Car1 {}
+
+var myCar : Car1?
+
+//Check if an optional is nul before using it
+//Techniqu #1 : Use If to check for nil
+if str != nil {
+    print(str!)
+}
+if str == nil {
+    //Show a error message to the user
+}
+//Techniqu #2 : Optional Binding
+if let myString = str{
+    print(myString)
+}
+
+//Declaring variables that can be nil without being an optional
+var str2 : String! = "Hello, Playground"
+str2 = nil
+print(str2)
+
+//its up to you to check it is nil
+
+
+//Dictionary
+
+//Declaring a Dictionary
+var myDictionary = ["key":"data","abc":"value"]
+
+//Declaring an Empty Dictionary
+var emptyDictionary = [String:String]() //creating dictionary object
+
+//Accessing an item in the Dictionary
+myDictionary["zzz"]
+print(myDictionary["key"]!)
+
+//Checking for an item in the Dictionary
+if let myString = myDictionary["key"] {
+    print(myString)
+}
+
+//Adding an item to the Dictionary
+myDictionary["newkey"] = "some more data"
+if let myString  = myDictionary["newKey"]{
+    print(myString)
+}
+
+//Updating items in the Dictionary
+myDictionary["key"] = "new data"
+print(myDictionary["key"]!)
+
+//Removing items from the Dictionary
+myDictionary["key"] = nil
+
+//Looping dictionary and array
+
+var array = ["cat","dog","bird"]
+var dictionary = ["furball":"cat","mony":"dog","tweetie":"bird"]
+
+//Looping throgh the array
+for animal in array {
+    print(animal)
+}
+
+//Looping through the dictionary
+for (name, animal) in dictionary {
+    print(name + " " + animal)
+    print("\(name) is a \(animal)")
+}
+
+//Looping through a range of numbers
+for i in 1...array.count {
+    print(i)
+}
+
+//Looping through the array using a range of numbers
+for index in 0..<array.count {
+    array[index]
+}
+
+//breaking out of a loop
+for animal in array{
+    print(animal)
+    if(animal == "dog"){
+        break
+    }
+}
+
+//Fill an array with 10 random numbers in the range 1-10
+//duplicate ok
+var array1 = [Int]()
+for _ in 1...10{
+    let randomnumber = arc4random_uniform(10) + 1
+    array1.append(Int(randomnumber))
+    //array += [randomnumber]
+    print(randomnumber)
+}
+
+//no duplicate
+array1.removeAll()
+repeat {
+    
+    let randomnumber = arc4random_uniform(10) + 1
+    
+    if array1.contains(Int(randomnumber)) == false{
+        array1.append(Int(randomnumber))
+    }
+    
+    
+} while array1.count < 10
+
+for number in array1{
+    print(number)
+}
+
+while array.count < 10{
+    
+}
+
+
+
+
+
+
+
+
 var soi:String
 soi = String(3)
-
 
 print(str)
 let a22 = "string"
@@ -270,6 +438,8 @@ for (license, car) in carDB {
     print(license)
     print(car)
 }
+
+
 
 
 

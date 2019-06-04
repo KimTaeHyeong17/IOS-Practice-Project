@@ -81,7 +81,7 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taki_icon_512_white" translatesAutoresizingMaskIntoConstraints="NO" id="YhP-da-H7v">
-                                <rect key="frame" x="150" y="558" width="115" height="16"/>
+                                <rect key="frame" x="150" y="62" width="115" height="512"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+            <point key="canvasLocation" x="-459" y="15"/>
         </scene>
     </scenes>
     <resources>

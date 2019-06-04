@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - NavigationDrawer (1.0.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - NavigationDrawer
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - NavigationDrawer
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  NavigationDrawer: 45ed18696d0d2f4679d05af690040074f7df57da
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 1df43a23617ca1158ba683ca74d5c42c427d73f4
+
+COCOAPODS: 1.7.1
