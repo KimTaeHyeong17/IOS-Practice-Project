@@ -16,7 +16,6 @@ import UIKit
 protocol PoliceCodes{
     
     func nineOhTwo()
-
 }
 
 class Officer{
@@ -83,7 +82,10 @@ var myDictionary = ["key":"data","abc":"value"]
 var emptyDictionary = [String:String]() //creating dictionary object
 
 //Accessing an item in the Dictionary
-myDictionary["zzz"]
+print(myDictionary["zzz"])
+if let myString = myDictionary["zzz"]{
+    print(myString)
+}
 print(myDictionary["key"]!)
 
 //Checking for an item in the Dictionary
@@ -220,10 +222,7 @@ x = 1
 switchPractice(integer : 1)
 switchPractice(integer : 2)
 switchPractice(integer : 4)
-//
-//for _ in 0...100{
-//    print("민지 사랑해")
-//}
+
 var sum = 0
 
 //for index in 0...100{

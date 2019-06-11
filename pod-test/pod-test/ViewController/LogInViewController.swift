@@ -28,9 +28,9 @@ struct Response : Decodable{
     let message : String?
 }
 
+
+
 class ViewController: UIViewController {
-    
-    
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         //        decodeWithMissingFields()
         
         
+        //progress indicater
         SVProgressHUD.setDefaultMaskType(.black)
         SVProgressHUD.show(withStatus: "Progress")
         SVProgressHUD.dismiss()
@@ -57,11 +58,7 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
     /** MARK: Login && Networking**/
-    
-    
     func attemptLogin(_ id:String, _ pw:String){
         let api = "https://taky.co.kr"
         let endpoint = "/login/app_login"
@@ -69,26 +66,23 @@ class ViewController: UIViewController {
         let params = ["id" : id,"pw" : pw]
         ApiService.callPost(url: url!, params: params, finish: finishPost)
     }
-    
-    
+
     func finishPost(message:String, data:Data?) -> Void {
         do{
             if let jsonData = data{
                 let parsedData = try JSONDecoder().decode(Response.self,from:jsonData)
                 if parsedData.code == "S01"{ //로그인 성공
                     if let code = parsedData.code{
+                        print(code)
                         DispatchQueue.main.sync {
                             performSegue(withIdentifier: "homeSegue", sender: nil)
                         }
-                        
-                        
                     }
                 }else{ //로그인 실패
                     if let msg = parsedData.message{
                         makeAlertDialog(msg,self)
                     }
                 }
-                
             }
         }
         catch{
@@ -97,8 +91,6 @@ class ViewController: UIViewController {
     }
     
     /** MARK: AlertView **/
-    
-    
     func makeAlertDialog(_ msg :String,_ viewController : UIViewController){
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "로그인", message: msg, preferredStyle: .alert)
@@ -113,7 +105,6 @@ class ViewController: UIViewController {
     }
     
     /** MARK: Json Decoder **/
-    
     func decodeSimpleJson(){
         let jsonUrlString = "https://api.letsbuildthatapp.com/jsondecodable/course"
         guard let url = URL(string:jsonUrlString) else {return}

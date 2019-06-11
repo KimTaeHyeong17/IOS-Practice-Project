@@ -18,6 +18,9 @@
 		49D7476222A605AA00A3B750 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D7476122A605AA00A3B750 /* SVProgressHUD.framework */; };
 		49D7476422A624FD00A3B750 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D7476322A624FD00A3B750 /* ApiService.swift */; };
 		49D7476A22A6533700A3B750 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D7476922A6533700A3B750 /* HomeViewController.swift */; };
+		49E9D62F22A77AB400CFC9A6 /* MenuManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9D62E22A77AB400CFC9A6 /* MenuManagementViewController.swift */; };
+		49E9D63322A77F9D00CFC9A6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9D63222A77F9D00CFC9A6 /* TableViewCell.swift */; };
+		49E9D63522A786F100CFC9A6 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9D63422A786F100CFC9A6 /* DatePopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		49D7476122A605AA00A3B750 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D7476322A624FD00A3B750 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		49D7476922A6533700A3B750 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		49E9D62E22A77AB400CFC9A6 /* MenuManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManagementViewController.swift; sourceTree = "<group>"; };
+		49E9D63222A77F9D00CFC9A6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		49E9D63422A786F100CFC9A6 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
 		531C330B6502A5C41173DC5A /* Pods-pod-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pod-test.debug.xcconfig"; path = "Target Support Files/Pods-pod-test/Pods-pod-test.debug.xcconfig"; sourceTree = "<group>"; };
 		651FDD63398FF17CBC054BD9 /* Pods_pod_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pod_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD604B430E7F0E440357C809 /* Pods-pod-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pod-test.release.xcconfig"; path = "Target Support Files/Pods-pod-test/Pods-pod-test.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 			children = (
 				49D7474D22A5FF9800A3B750 /* LogInViewController.swift */,
 				49D7476922A6533700A3B750 /* HomeViewController.swift */,
+				49E9D62E22A77AB400CFC9A6 /* MenuManagementViewController.swift */,
+				49E9D63222A77F9D00CFC9A6 /* TableViewCell.swift */,
+				49E9D63422A786F100CFC9A6 /* DatePopupViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -245,9 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E9D62F22A77AB400CFC9A6 /* MenuManagementViewController.swift in Sources */,
 				49D7474E22A5FF9800A3B750 /* LogInViewController.swift in Sources */,
 				49D7474C22A5FF9800A3B750 /* AppDelegate.swift in Sources */,
+				49E9D63322A77F9D00CFC9A6 /* TableViewCell.swift in Sources */,
 				49D7476422A624FD00A3B750 /* ApiService.swift in Sources */,
+				49E9D63522A786F100CFC9A6 /* DatePopupViewController.swift in Sources */,
 				49D7476A22A6533700A3B750 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
